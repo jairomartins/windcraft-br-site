@@ -1,0 +1,36 @@
+import type pt from './pt-BR';
+const en: typeof pt = {
+  meta: 'Dynamic wind and an aerodynamic glider for Minecraft Java. Discover WindCraft BR Alpha 0.5.0.',
+  skip: 'Skip to content', nav: ['The mod', 'Gameplay', 'Crafting', 'Roadmap'], download: 'Download the mod', github: 'View on GitHub',
+  eyebrow: 'A NEW WAY TO EXPLORE', title: 'Master the wind.', titleEnd: 'Explore new horizons.',
+  intro: 'WindCraft BR turns wind into a new exploration mechanic in Minecraft. Glide through the skies, ride updrafts and discover a different way to travel.',
+  gameplay: 'See gameplay', alpha: 'Alpha 0.5.0 available', scroll: 'Your next horizon starts here', heroCaption: 'Mountain gliding · Real Alpha 0.5.0 screenshot',
+  featureLabel: 'MADE FOR EXPLORERS', featureTitle: 'A new force in your world.', featureIntro: 'Feel the wind direction. Find the right current. Make the journey your next discovery.',
+  features: [
+    ['Dynamic wind', 'Speed, direction and gusts vary with biome, altitude, time and weather. The server controls the simulation.'],
+    ['Wind Glider', 'A craftable item with lift, drag and gradual turns. Turn altitude into movement and guide your flight with your gaze.'],
+    ['Updrafts', 'Biome heat, exposed slopes and lava influence rising air. Ride strong currents to gain altitude.'],
+    ['Anemometer', 'Read local wind speed, direction and intensity before choosing your route. Craftable and ready for your backpack.'],
+    ['Atmosphere in motion', 'Clouds and environmental particles follow the wind. Leaves retain their original Minecraft geometry.'],
+    ['Flight HUD', 'Track speed, Y altitude coordinate, wind and vertical current in an adjustable panel.']
+  ],
+  galleryLabel: 'STRAIGHT FROM THE GAME', galleryTitle: 'Your world, from a new angle.', galleryIntro: 'Real project screenshots. Select an image to explore the details.',
+  captions: ['Open glider and flight HUD', 'Gliding between mountains', 'Environmental particles in the forest', 'Glider recipe at the crafting table'],
+  enlarge: 'Enlarge image', close: 'Close image', previous: 'Previous image', next: 'Next image', galleryHint: 'Use arrow keys or swipe to navigate. Esc closes.',
+  craftingLabel: 'FROM WORKBENCH TO SKY', craftingTitle: 'An adventure of your own making.', craftingIntro: 'Simple ingredients. New possibilities. Follow the 3×3 crafting table layout.',
+  glider: 'Wind Glider', anemometer: 'Anemometer', ingredients: ['Wool (any color)', 'Bamboo', 'Stick', 'String', 'Iron ingot', 'Compass', 'Empty'],
+  gliderMaterials: '4 wool · 1 bamboo · 2 sticks · 2 string', meterMaterials: '3 iron ingots · 1 compass · 1 stick',
+  craftingNote: 'Hold the item and right-click to use it. You can ready the glider on the ground, but you need a jump or altitude to glide; it provides no propulsion.', recipeSource: 'Check official recipes',
+  controlsTitle: 'Your first flight', controls: [['Right-click', 'Open or close the glider'], ['Mouse + A / D', 'Guide your flight and assist turns'], ['W / S', 'Speed up while losing altitude or slow down'], ['Space', 'Brief lift maneuver, starting at 5 m/s'], ['Shift', 'Close the glider'], ['F5', 'Switch perspective as usual']],
+  downloadLabel: 'READY TO TAKE OFF?', downloadTitle: 'Your next destination is up there.', downloadIntro: 'Download the Alpha and discover what lies between a jump and your next horizon.', jar: 'Download Alpha 0.5.0 · JAR', sourceDownload: 'Official file from the GitHub repository',
+  steps: ['Install Minecraft Java 26.3 and Java 25.', 'Install Forge 66.1.8 for Minecraft 26.3.', 'Download the official WindCraft BR JAR.', 'Place the JAR in your instance’s mods folder and remove older versions.', 'Start the game with the Forge profile. In multiplayer, use 0.5.0 on the server and every client.'],
+  forge: 'Get Forge', limitations: 'Before your first jump', limitationText: 'This is an Alpha. Audio, multiplayer, collisions and compatibility with camera and armor mods still need full validation. Opening close to the ground and high-speed collisions can cause damage. Wind and thermals are unavailable in the Nether and End.', validation: 'See tests and limitations',
+  roadmapLabel: 'A PROJECT IN MOTION', roadmapTitle: 'The wind has more stories to tell.', implemented: 'Implemented in the Alpha', planned: 'Under consideration / planned', plannedNote: 'Ideas to explore, with no promise or release date.',
+  roadmapDone: ['Dynamic wind', 'Craftable glider', 'Aerodynamic physics', 'Updrafts', 'Anemometer', 'Flight HUD', 'Wind-driven clouds and particles'],
+  roadmapFuture: ['Kites', 'Windmills', 'Wind power', 'Sailboats', 'Balloons and airships', 'Advanced weather phenomena'],
+  communityLabel: 'BUILT WITH THE COMMUNITY', communityTitle: 'Help shape the future of WindCraft BR', communityIntro: 'Your next idea could change the project’s direction. Share your experience directly through GitHub Issues.',
+  community: [['Send a suggestion', 'Describe an improvement or a new mechanic.'], ['Report a problem', 'Include your game version, what happened and how to reproduce it.'], ['Suggest the next update', 'Choose a roadmap idea and explain why it should come next.']],
+  feedbackNote: 'Submission is completed on GitHub and requires an account. Suggestions are not persistent votes.',
+  footer: 'New winds. New adventures.', unofficial: 'Independent mod for Minecraft Java. Not affiliated with Mojang or Microsoft.', documentation: 'Documentation', top: 'Back to top', language: 'Language', menu: 'Navigation menu',
+};
+export default en;
