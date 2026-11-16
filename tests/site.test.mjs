@@ -47,6 +47,18 @@ test('both languages have translated content, metadata, correct HTML language an
   }
   assert.ok(!pages.en.includes('Relatar um problema'));
 });
+test('release 0.6.0 includes six screenshots and same-color wool crafting', () => {
+  for (const html of Object.values(pages)) {
+    assert.ok(html.includes('0.6.0'));
+    assert.ok(!html.includes('0.5.0'));
+    for (const file of ['planador-oceano', 'planador-vista-superior', 'planador-vista-inferior', 'planador-curva', 'planador-montanhas', 'planador-planicie']) {
+      assert.ok(html.includes(`${file}-0.6.0.png`), file);
+    }
+  }
+  assert.ok(pages['pt-BR'].includes('4 lãs da mesma cor'));
+  assert.ok(pages.en.includes('4 wool of the same color'));
+});
+
 test('every in-page navigation link has a real target', () => {
   for (const html of Object.values(pages)) {
     const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]));
@@ -58,7 +70,7 @@ test('every in-page navigation link has a real target', () => {
 });
 test('download points to the verified official alpha; feedback opens three real issue composers', () => {
   for (const [locale, html] of Object.entries(pages)) {
-    assert.match(html, /https:\/\/github.com\/jairomartins\/windcraft-br\/raw\/refs\/heads\/main\/dist\/windcraft-0.5.0.jar/);
+    assert.match(html, /https:\/\/github.com\/jairomartins\/windcraft-br\/raw\/refs\/heads\/main\/dist\/windcraft-0.6.0.jar/);
     const issues = [...html.matchAll(/href="(https:\/\/github.com\/jairomartins\/windcraft-br\/issues\/new\?[^"]+)"/g)];
     assert.equal(issues.length, 3);
     for (const [index, match] of issues.entries()) {
@@ -71,14 +83,14 @@ test('download points to the verified official alpha; feedback opens three real 
   }
 });
 test('real screenshots, item icons, favicon and image optimization return valid images', async () => {
-  for (const file of ['planador-frontal.png', 'voo-montanhas.png', 'voo-floresta.png', 'craft-planador.png', 'wind_glider.png', 'anemometer.png']) {
+  for (const file of ['planador-oceano-0.6.0.png', 'planador-vista-superior-0.6.0.png', 'planador-vista-inferior-0.6.0.png', 'planador-curva-0.6.0.png', 'planador-montanhas-0.6.0.png', 'planador-planicie-0.6.0.png', 'wind_glider.png', 'anemometer.png']) {
     const response = await fetch(`${base}/images/${file}`);
     assert.equal(response.status, 200, file);
     assert.match(response.headers.get('content-type'), /image\/png/);
     assert.ok((await response.arrayBuffer()).byteLength > 100);
   }
   assert.equal((await fetch(`${base}/favicon.png`)).status, 200);
-  const optimized = await fetch(`${base}/_next/image?url=%2Fimages%2Fvoo-montanhas.png&w=640&q=75`);
+  const optimized = await fetch(`${base}/_next/image?url=%2Fimages%2Fplanador-curva-0.6.0.png&w=640&q=75`);
   assert.equal(optimized.status, 200);
   assert.match(optimized.headers.get('content-type'), /image\//);
 });

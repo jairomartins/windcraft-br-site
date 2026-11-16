@@ -21,7 +21,7 @@ export default function Gallery({ t }: { t: Dictionary }) {
       <div className="lightbox-inner" onTouchStart={e => { touch.current = e.changedTouches[0].clientX; }} onTouchEnd={e => { if (touch.current !== null) { const delta = e.changedTouches[0].clientX - touch.current; if (Math.abs(delta) > 45) move(delta < 0 ? 1 : -1); touch.current = null; } }}>
         <button autoFocus className="lightbox-close icon-button" onClick={close} aria-label={t.close}><X /></button>
         <Image src={`/images/${gallery[index]}`} alt={t.captions[index]} width={1280} height={720} sizes="95vw" />
-        <div className="lightbox-controls"><button className="icon-button" onClick={() => move(-1)} aria-label={t.previous}><ArrowLeft /></button><p aria-live="polite">{index + 1} / 4 · {t.captions[index]}</p><button className="icon-button" onClick={() => move(1)} aria-label={t.next}><ArrowRight /></button></div>
+        <div className="lightbox-controls"><button className="icon-button" onClick={() => move(-1)} aria-label={t.previous}><ArrowLeft /></button><p aria-live="polite">{index + 1} / {gallery.length} Â· {t.captions[index]}</p><button className="icon-button" onClick={() => move(1)} aria-label={t.next}><ArrowRight /></button></div>
         <p className="muted lightbox-hint">{t.galleryHint}</p>
       </div>
     </dialog>

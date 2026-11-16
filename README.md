@@ -53,12 +53,12 @@ Os nomes existentes foram mantidos para preservar caminhos locais do ambiente Ja
 
 ## Conteúdo e fontes
 
-Dados conferidos em 13/11/2026 no checkout e no [repositório oficial](https://github.com/jairomartins/windcraft-br):
+Dados conferidos em 16/11/2026 no checkout e no [repositório oficial](https://github.com/jairomartins/windcraft-br):
 
-- Alpha 0.5.0, Minecraft Java 26.3, Forge 66.1.8 e Java 25, conforme README e build.gradle.
+- Alpha 0.6.0, Minecraft Java 26.3, Forge 66.1.8 e Java 25, conforme README e build.gradle.
 - Receitas conferidas em `docs/CRAFTING.md` e `src/main/resources/data/windcraft/recipe/*.json`.
-- As quatro imagens são capturas reais de `docs/screenshots/`; ícones vêm de `assets/windcraft/textures/item/`. Não foi encontrada uma logo separada: o cabeçalho usa o nome do projeto e seu ícone existente de planador.
-- Download oficial do JAR em `main/dist/windcraft-0.5.0.jar`, verificado com resposta HTTP 200. A API de releases não listou releases publicadas na verificação; não há links inventados para plataformas externas.
+- A galeria e o hero usam seis capturas reais fornecidas pelo autor em 16/11/2026, com o planador em leque e HUD. Ícones e favicon foram atualizados a partir do mod.
+- Download oficial em `main/dist/windcraft-0.6.0.jar`, incluído no commit do mod e verificado após o push. Não há links inventados para plataformas externas.
 - Issues habilitadas e Discussions desabilitadas. Os três links de feedback abrem o compositor do GitHub com título e corpo traduzidos. O jogador conclui o envio no GitHub, com sua conta. Nenhuma Issue é criada automaticamente.
 - Limitações vêm de `VALIDATION.md`: validação completa de áudio, multiplayer, colisões e compatibilidade ainda pendente. Não se promete voo propulsado, animação de folhas nem vento no Nether/End.
 
@@ -79,5 +79,10 @@ Não é necessário `vercel.json`: a configuração nativa do Next.js é suficie
 `.env.example` documenta a variável opcional. Sem domínio, o site não emite canonical, URLs sociais absolutas ou entradas de sitemap que inventem uma origem. Quando `SITE_URL` estiver definido, habilita canonical, alternates por idioma, imagens Open Graph/Twitter e sitemap bilíngue. As imagens sociais de 1200×630 ficam em `/pt-BR/social-image` e `/en/social-image`, compostas com captura real do mod. `robots.txt` é gerado pelo Next.js.
 
 ## Verificação visual
+
+Atualização 0.6.0 (16/11/2026): build de produção e **9/9 testes HTTP passaram**,
+incluindo as seis capturas novas, receitas por cor, idiomas, links e imagens
+sociais 1200 × 630. A ferramenta de navegador desta sessão falhou ao iniciar;
+não houve nova inspeção visual interativa em desktop/celular.
 
 Conferir em desktop e celular: navegação e seletor de idioma, menu compacto, quebra do hero, receitas com foco/toque, galeria (Escape/setas/deslize), controles de voo, ações de download e feedback, ausência de rolagem horizontal, contraste e modo de movimento reduzido. Não há pontuação Lighthouse declarada. A inspeção visual automatizada desta entrega ficou indisponível por expiração do acesso ao Chrome; os testes HTTP não substituem essa revisão.

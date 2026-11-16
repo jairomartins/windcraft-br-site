@@ -12,5 +12,5 @@ export function feedbackUrl(kind: number, locale: Locale) {
     '## Versões\nWindCraft: 0.5.0\nMinecraft: 26.3\nForge: 66.1.8\n\n## O que aconteceu\n\n## Passos para reproduzir\n\n## Comportamento esperado\n\n## Logs / capturas\n\n',
     '## Ideia do roadmap\nEscolha: Pipas / Moinhos / Energia eólica / Barcos a vela / Balões e dirigíveis / Clima avançado\n\n## Por que deveria vir a seguir\n\n',
   ];
-  return `${project.repository}/issues/new?${new URLSearchParams({ title: titles[kind], body: bodies[kind] })}`;
+  return `${project.repository}/issues/new?${new URLSearchParams({ title: titles[kind], body: bodies[kind].replaceAll("0.5.0", project.version) })}`;
 }
