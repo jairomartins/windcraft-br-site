@@ -4,6 +4,7 @@ import { ArrowDown, ArrowDownToLine, ArrowRight, ArrowUp, Check, CloudSun, Compa
 import { project, roadmap } from '@/data/project';
 import { dictionary, type Locale } from '@/lib/i18n';
 import { feedbackUrl } from '@/lib/feedback';
+import { siteUrl } from '@/lib/seo';
 import Gallery from './gallery';
 import Crafting from './crafting';
 
@@ -14,7 +15,25 @@ function Heading({ label, title, intro }: { label: string; title: string; intro?
 export default function Landing({ locale }: { locale: Locale }) {
   const t = dictionary(locale);
   const video = project.gameplayVideo.startsWith('https://') ? project.gameplayVideo : undefined;
-  const schema = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: project.name, softwareVersion: project.version, applicationCategory: 'GameApplication', operatingSystem: 'Minecraft Java 26.3 / Forge 66.1.8 / Java 25', description: t.meta, downloadUrl: project.download, codeRepository: project.repository, inLanguage: locale, isAccessibleForFree: true };
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: project.name,
+    softwareVersion: project.version,
+    applicationCategory: 'GameApplication',
+    operatingSystem: 'Windows, macOS, Linux',
+    softwareRequirements: `Minecraft Java ${project.minecraft}, Forge ${project.forge}, Java ${project.java}`,
+    description: t.meta,
+    downloadUrl: project.download,
+    codeRepository: project.repository,
+    inLanguage: locale,
+    isAccessibleForFree: true,
+    ...(siteUrl ? {
+      url: `${siteUrl}/${locale}`,
+      image: `${siteUrl}/${locale}/social-image`,
+      screenshot: ['planador-oceano', 'planador-vista-superior', 'planador-vista-inferior', 'planador-curva', 'planador-montanhas', 'planador-planicie'].map((name) => `${siteUrl}/images/${name}-${project.version}.png`),
+    } : {}),
+  };
   return <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
     <a className="skip-link" href="#main">{t.skip}</a>

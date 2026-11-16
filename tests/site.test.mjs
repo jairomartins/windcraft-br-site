@@ -5,6 +5,7 @@ import { setTimeout } from 'node:timers/promises';
 import { readFile } from 'node:fs/promises';
 
 const base = 'http://127.0.0.1:3197';
+const siteUrl = process.env.SITE_URL?.trim().replace(/\/$/, '') || 'https://windcraft-br-site.vercel.app';
 let server;
 let output = '';
 const pages = {};
@@ -43,7 +44,7 @@ test('both languages have translated content, metadata, correct HTML language an
     assert.match(html, /href="\/pt-BR"/);
     assert.match(html, /href="\/en"/);
     assert.match(html, /application\/ld\+json/);
-    assert.ok(!html.includes('rel="canonical"') || process.env.SITE_URL, 'no invented canonical domain');
+    assert.ok(html.includes(`rel="canonical" href="${siteUrl}/${locale}"`));
   }
   assert.ok(!pages.en.includes('Relatar um problema'));
 });
@@ -111,8 +112,7 @@ test('robots and sitemap are served without invented domains', async () => {
   assert.equal(sitemap.status, 200);
   const xml = await sitemap.text();
   assert.ok(!xml.includes('example.com'));
-  if (process.env.SITE_URL) assert.ok(xml.includes(`${process.env.SITE_URL}/en`));
-  else assert.ok(!xml.includes('<loc>'));
+  assert.ok(xml.includes(`${siteUrl}/en`));
 });
 test('crafting patterns match the official mod JSON files when the sibling checkout exists', async t => {
   let glider, meter;

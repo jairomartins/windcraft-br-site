@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const t = dictionary(locale);
-  const title = locale === 'en' ? 'WindCraft BR — Master the wind' : 'WindCraft BR — Domine o vento';
+  const title = locale === 'en' ? 'WindCraft BR — Minecraft Glider Mod' : 'WindCraft BR — Mod de Planador para Minecraft';
   const social = `/${locale}/social-image`;
   return { title, description: t.meta, metadataBase: siteUrl ? new URL(siteUrl) : undefined,
     alternates: siteUrl ? { canonical: `${siteUrl}/${locale}`, languages: { 'pt-BR': `${siteUrl}/pt-BR`, en: `${siteUrl}/en`, 'x-default': `${siteUrl}/pt-BR` } } : undefined,

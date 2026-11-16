@@ -72,11 +72,11 @@ Preparação para votação futura: [docs/VOTING.md](docs/VOTING.md). Não há c
 
 1. Importe esta pasta como repositório independente ou selecione `WindCraft-BR-site` como Root Directory em um repositório que contenha os dois projetos.
 2. Use o preset **Next.js** e Node.js 22. Comandos padrão: instalação `npm ci`, build `npm run build`; não configure Output Directory manualmente.
-3. Quando o domínio estiver definido, configure `SITE_URL` com a origem absoluta, por exemplo o endereço real recebido da Vercel, sem caminho. Faça um novo deploy.
+3. O domínio de produção padrão é `https://windcraft-br-site.vercel.app`. Se usar um domínio personalizado, configure `SITE_URL` com a origem absoluta dele, sem caminho nem barra final, e faça um novo deploy.
 
 Não é necessário `vercel.json`: a configuração nativa do Next.js é suficiente. Nenhum deploy foi executado por esta entrega local.
 
-`.env.example` documenta a variável opcional. Sem domínio, o site não emite canonical, URLs sociais absolutas ou entradas de sitemap que inventem uma origem. Quando `SITE_URL` estiver definido, habilita canonical, alternates por idioma, imagens Open Graph/Twitter e sitemap bilíngue. As imagens sociais de 1200×630 ficam em `/pt-BR/social-image` e `/en/social-image`, compostas com captura real do mod. `robots.txt` é gerado pelo Next.js.
+`.env.example` documenta a variável opcional, que substitui o domínio padrão. A origem configurada habilita canonical, alternates por idioma, imagens Open Graph/Twitter e sitemap bilíngue. As imagens sociais de 1200×630 ficam em `/pt-BR/social-image` e `/en/social-image`, compostas com captura real do mod. `robots.txt` é gerado pelo Next.js.
 
 ## Verificação visual
 
