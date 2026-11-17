@@ -44,7 +44,18 @@ export default function Landing({ locale }: { locale: Locale }) {
       <details className="mobile-menu"><summary aria-label={t.menu}><Menu /></summary><nav aria-label={t.menu}>{t.nav.map((item, i) => <a key={item} href={`#${ids[i]}`}>{item}</a>)}<a href="#download">{t.download}</a></nav></details>
     </div></header>
     <main id="main">
-      <section className="hero"><div className="hero-landscape"><Image src="/images/planador-curva-0.6.0.png" alt="" fill priority sizes="100vw" /></div><div className="hero-shade" /><div className="wind-lines" aria-hidden="true"><i /><i /><i /></div>
+      <section className="hero">
+        <div className="hero-landscape">
+          <Image
+            src="/images/hero-planador.webp"
+            alt=""
+            fill
+            preload
+            quality={90}
+            sizes="(max-width: 700px) 960px, (max-width: 1549px) 1360px, max(65vw, 1440px)"
+          />
+        </div>
+        <div className="hero-shade" /><div className="wind-lines" aria-hidden="true"><i /><i /><i /></div>
         <div className="container hero-inner"><a className="alpha-badge" href="#download"><span />{t.alpha}<ArrowRight size={14} /></a><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}<br /><span>{t.titleEnd}</span></h1><p className="hero-intro">{t.intro}</p>
           <div className="hero-buttons"><a className="button" href={project.download}><ArrowDownToLine size={19} />{t.download}<ArrowRight size={18} /></a><a className="button button-secondary" href="#gameplay">{t.gameplay}<ArrowDown size={18} /></a></div>
           <div className="compatibility"><span><span className="status-dot" />Minecraft Java {project.minecraft}</span><span>Forge {project.forge}</span><span>Java {project.java}</span></div>

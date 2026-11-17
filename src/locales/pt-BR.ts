@@ -3,7 +3,7 @@ const pt = {
   skip: 'Ir para o conteúdo', nav: ['O mod', 'Gameplay', 'Crafting', 'Roadmap'], download: 'Baixar o mod', github: 'Ver no GitHub',
   eyebrow: 'UM NOVO JEITO DE EXPLORAR', title: 'Domine o vento.', titleEnd: 'Explore novos horizontes.',
   intro: 'WindCraft BR transforma o vento em uma nova mecânica de exploração no Minecraft. Plane pelos céus, aproveite correntes ascendentes e descubra uma maneira diferente de viajar.',
-  gameplay: 'Ver gameplay', alpha: 'Alpha 0.6.1 disponível', scroll: 'O próximo horizonte começa aqui', heroCaption: 'Planeio nas montanhas · Captura real da Alpha 0.6.0',
+  gameplay: 'Ver gameplay', alpha: 'Alpha 0.6.1 disponível', scroll: 'O próximo horizonte começa aqui', heroCaption: 'Planeio sobre o vale · Arte baseada em gameplay',
   featureLabel: 'FEITO PARA QUEM EXPLORA', featureTitle: 'O mundo tem uma nova força.', featureIntro: 'Sinta a direção do vento. Encontre a corrente certa. Faça do caminho a sua próxima descoberta.',
   features: [
     ['Vento dinâmico', 'Velocidade, direção e rajadas variam com bioma, altitude, horário e clima. A simulação é controlada pelo servidor.'],

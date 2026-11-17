@@ -57,7 +57,7 @@ Dados conferidos em 16/11/2026 no checkout e no [repositório oficial](https://g
 
 - Alpha 0.6.1, Minecraft Java 26.3, Forge 66.1.8 e Java 25, conforme README e build.gradle.
 - Receitas conferidas em `docs/CRAFTING.md` e `src/main/resources/data/windcraft/recipe/*.json`.
-- A galeria e o hero usam seis capturas da Alpha 0.6.0 fornecidas pelo autor em 16/11/2026, com o planador em leque e HUD. Ícones e favicon são do mod.
+- A galeria usa seis capturas da Alpha 0.6.0 fornecidas pelo autor em 16/11/2026, com o planador em leque e HUD. A imagem de abertura é uma arte baseada na captura do voo sobre o vale. Ícones e favicon são do mod.
 - O site aponta para o download oficial em `main/dist/windcraft-0.6.1.jar`.
 - Issues habilitadas e Discussions desabilitadas. Os três links de feedback abrem o compositor do GitHub com título e corpo traduzidos. O jogador conclui o envio no GitHub, com sua conta. Nenhuma Issue é criada automaticamente.
 - Limitações vêm de `VALIDATION.md`: validação completa de áudio, multiplayer, colisões e compatibilidade ainda pendente. Não se promete voo propulsado, animação de folhas nem vento no Nether/End.

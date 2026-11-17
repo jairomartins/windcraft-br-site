@@ -84,6 +84,15 @@ test('download points to the verified official alpha; feedback opens three real 
   }
 });
 test('real screenshots, item icons, favicon and image optimization return valid images', async () => {
+  for (const html of Object.values(pages)) {
+    assert.match(html, /url=%2Fimages%2Fhero-planador\.webp&amp;w=\d+&amp;q=90/);
+  }
+  const hero = await fetch(`${base}/_next/image?url=%2Fimages%2Fhero-planador.webp&w=1920&q=90`, {
+    headers: { accept: 'image/webp' },
+  });
+  assert.equal(hero.status, 200);
+  assert.equal(hero.headers.get('content-type'), 'image/webp');
+
   for (const file of ['planador-oceano-0.6.0.png', 'planador-vista-superior-0.6.0.png', 'planador-vista-inferior-0.6.0.png', 'planador-curva-0.6.0.png', 'planador-montanhas-0.6.0.png', 'planador-planicie-0.6.0.png', 'wind_glider.png', 'anemometer.png']) {
     const response = await fetch(`${base}/images/${file}`);
     assert.equal(response.status, 200, file);

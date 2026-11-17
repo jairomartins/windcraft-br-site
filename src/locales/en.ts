@@ -4,7 +4,7 @@ const en: typeof pt = {
   skip: 'Skip to content', nav: ['The mod', 'Gameplay', 'Crafting', 'Roadmap'], download: 'Download the mod', github: 'View on GitHub',
   eyebrow: 'A NEW WAY TO EXPLORE', title: 'Master the wind.', titleEnd: 'Explore new horizons.',
   intro: 'WindCraft BR turns wind into a new exploration mechanic in Minecraft. Glide through the skies, ride updrafts and discover a different way to travel.',
-  gameplay: 'See gameplay', alpha: 'Alpha 0.6.1 available', scroll: 'Your next horizon starts here', heroCaption: 'Mountain gliding · Real Alpha 0.6.0 screenshot',
+  gameplay: 'See gameplay', alpha: 'Alpha 0.6.1 available', scroll: 'Your next horizon starts here', heroCaption: 'Gliding over the valley · Artwork based on gameplay',
   featureLabel: 'MADE FOR EXPLORERS', featureTitle: 'A new force in your world.', featureIntro: 'Feel the wind direction. Find the right current. Make the journey your next discovery.',
   features: [
     ['Dynamic wind', 'Speed, direction and gusts vary with biome, altitude, time and weather. The server controls the simulation.'],
