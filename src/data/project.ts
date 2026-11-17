@@ -1,7 +1,7 @@
 export const project = {
-  name: 'WindCraft BR', version: '0.6.0', minecraft: '26.3', forge: '66.1.8', java: '25',
+  name: 'WindCraft BR', version: '0.6.1', minecraft: '26.3', forge: '66.1.8', java: '25',
   repository: 'https://github.com/jairomartins/windcraft-br',
-  download: 'https://github.com/jairomartins/windcraft-br/raw/refs/heads/main/dist/windcraft-0.6.0.jar',
+  download: 'https://github.com/jairomartins/windcraft-br/raw/refs/heads/main/dist/windcraft-0.6.1.jar',
   forgeDownload: 'https://files.minecraftforge.net/net/minecraftforge/forge/index_26.3.html',
   // No official gameplay video has been supplied. Set an HTTPS video URL to show the player.
   gameplayVideo: '',

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowDown, ArrowDownToLine, ArrowRight, ArrowUp, Check, CloudSun, Compass, ExternalLink, Feather, Github, Menu, MessageSquare, Mountain, Navigation, Wind, Gauge, Bug, Lightbulb } from 'lucide-react';
-import { project, roadmap } from '@/data/project';
+import { gallery, project, roadmap } from '@/data/project';
 import { dictionary, type Locale } from '@/lib/i18n';
 import { feedbackUrl } from '@/lib/feedback';
 import { siteUrl } from '@/lib/seo';
@@ -31,7 +31,7 @@ export default function Landing({ locale }: { locale: Locale }) {
     ...(siteUrl ? {
       url: `${siteUrl}/${locale}`,
       image: `${siteUrl}/${locale}/social-image`,
-      screenshot: ['planador-oceano', 'planador-vista-superior', 'planador-vista-inferior', 'planador-curva', 'planador-montanhas', 'planador-planicie'].map((name) => `${siteUrl}/images/${name}-${project.version}.png`),
+      screenshot: gallery.map((file) => `${siteUrl}/images/${file}`),
     } : {}),
   };
   return <>

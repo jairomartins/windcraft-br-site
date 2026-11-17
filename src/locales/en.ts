@@ -1,10 +1,10 @@
 import type pt from './pt-BR';
 const en: typeof pt = {
-  meta: 'Dynamic wind and an aerodynamic glider for Minecraft Java. Discover WindCraft BR Alpha 0.6.0.',
+  meta: 'Dynamic wind and an aerodynamic glider for Minecraft Java. Discover WindCraft BR Alpha 0.6.1.',
   skip: 'Skip to content', nav: ['The mod', 'Gameplay', 'Crafting', 'Roadmap'], download: 'Download the mod', github: 'View on GitHub',
   eyebrow: 'A NEW WAY TO EXPLORE', title: 'Master the wind.', titleEnd: 'Explore new horizons.',
   intro: 'WindCraft BR turns wind into a new exploration mechanic in Minecraft. Glide through the skies, ride updrafts and discover a different way to travel.',
-  gameplay: 'See gameplay', alpha: 'Alpha 0.6.0 available', scroll: 'Your next horizon starts here', heroCaption: 'Mountain gliding · Real Alpha 0.6.0 screenshot',
+  gameplay: 'See gameplay', alpha: 'Alpha 0.6.1 available', scroll: 'Your next horizon starts here', heroCaption: 'Mountain gliding · Real Alpha 0.6.0 screenshot',
   featureLabel: 'MADE FOR EXPLORERS', featureTitle: 'A new force in your world.', featureIntro: 'Feel the wind direction. Find the right current. Make the journey your next discovery.',
   features: [
     ['Dynamic wind', 'Speed, direction and gusts vary with biome, altitude, time and weather. The server controls the simulation.'],
@@ -22,8 +22,8 @@ const en: typeof pt = {
   gliderMaterials: '4 wool of the same color · 1 bamboo · 2 sticks · 2 string', meterMaterials: '3 iron ingots · 1 compass · 1 stick',
   craftingNote: 'Use four matching wool blocks from any of the 16 colors: they determine the fabric and icon color. Mixed colors do not craft a glider. Right-click to use; starting on the ground requires a jump or altitude, with no propulsion.', recipeSource: 'Check official recipes',
   controlsTitle: 'Your first flight', controls: [['Right-click', 'Open or close the glider'], ['A / D', 'Bank and turn; release to return smoothly to level'], ['Mouse', 'Look around and contribute to pitch'], ['W / S', 'Speed up while losing altitude or slow down'], ['Space', 'Brief lift maneuver, starting at 5 m/s'], ['Shift', 'Close the glider'], ['F5', 'Switch perspective as usual']],
-  downloadLabel: 'READY TO TAKE OFF?', downloadTitle: 'Your next destination is up there.', downloadIntro: 'Download the Alpha and discover what lies between a jump and your next horizon.', jar: 'Download Alpha 0.6.0 · JAR', sourceDownload: 'Official file from the GitHub repository',
-  steps: ['Install Minecraft Java 26.3 and Java 25.', 'Install Forge 66.1.8 for Minecraft 26.3.', 'Download the official WindCraft BR JAR.', 'Place the JAR in your instance’s mods folder and remove older versions.', 'Start the game with the Forge profile. In multiplayer, use 0.6.0 on the server and every client.'],
+  downloadLabel: 'READY TO TAKE OFF?', downloadTitle: 'Your next destination is up there.', downloadIntro: 'Download the Alpha and discover what lies between a jump and your next horizon.', jar: 'Download Alpha 0.6.1 · JAR', sourceDownload: 'Official file from the GitHub repository',
+  steps: ['Install Minecraft Java 26.3 and Java 25.', 'Install Forge 66.1.8 for Minecraft 26.3.', 'Download the official WindCraft BR JAR.', 'Place the JAR in your instance’s mods folder and remove older versions.', 'Start the game with the Forge profile. In multiplayer, use 0.6.1 on the server and every client.'],
   forge: 'Get Forge', limitations: 'Before your first jump', limitationText: 'This is an Alpha. Audio, multiplayer, collisions and compatibility with camera and armor mods still need full validation. Opening close to the ground and high-speed collisions can cause damage. Wind and thermals are unavailable in the Nether and End.', validation: 'See tests and limitations',
   roadmapLabel: 'A PROJECT IN MOTION', roadmapTitle: 'The wind has more stories to tell.', implemented: 'Implemented in the Alpha', planned: 'Under consideration / planned', plannedNote: 'Ideas to explore, with no promise or release date.',
   roadmapDone: ['Dynamic wind', 'Craftable glider', 'Aerodynamic physics', 'Updrafts', 'Anemometer', 'Flight HUD', 'Wind-driven clouds and particles'],

@@ -1,9 +1,9 @@
 const pt = {
-  meta: 'Vento dinâmico e um planador com física aerodinâmica para Minecraft Java. Conheça a Alpha 0.6.0 do WindCraft BR.',
+  meta: 'Vento dinâmico e um planador com física aerodinâmica para Minecraft Java. Conheça a Alpha 0.6.1 do WindCraft BR.',
   skip: 'Ir para o conteúdo', nav: ['O mod', 'Gameplay', 'Crafting', 'Roadmap'], download: 'Baixar o mod', github: 'Ver no GitHub',
   eyebrow: 'UM NOVO JEITO DE EXPLORAR', title: 'Domine o vento.', titleEnd: 'Explore novos horizontes.',
   intro: 'WindCraft BR transforma o vento em uma nova mecânica de exploração no Minecraft. Plane pelos céus, aproveite correntes ascendentes e descubra uma maneira diferente de viajar.',
-  gameplay: 'Ver gameplay', alpha: 'Alpha 0.6.0 disponível', scroll: 'O próximo horizonte começa aqui', heroCaption: 'Planeio nas montanhas · Captura real da Alpha 0.6.0',
+  gameplay: 'Ver gameplay', alpha: 'Alpha 0.6.1 disponível', scroll: 'O próximo horizonte começa aqui', heroCaption: 'Planeio nas montanhas · Captura real da Alpha 0.6.0',
   featureLabel: 'FEITO PARA QUEM EXPLORA', featureTitle: 'O mundo tem uma nova força.', featureIntro: 'Sinta a direção do vento. Encontre a corrente certa. Faça do caminho a sua próxima descoberta.',
   features: [
     ['Vento dinâmico', 'Velocidade, direção e rajadas variam com bioma, altitude, horário e clima. A simulação é controlada pelo servidor.'],
@@ -21,8 +21,8 @@ const pt = {
   gliderMaterials: '4 lãs da mesma cor · 1 bambu · 2 gravetos · 2 linhas', meterMaterials: '3 barras de ferro · 1 bússola · 1 graveto',
   craftingNote: 'Use quatro lãs da mesma cor, entre as 16 cores disponíveis: ela define o tecido e o ícone do planador. Misturar cores não produz resultado. Use com o botão direito; preparar no chão exige um salto ou altura para planar, sem propulsão.', recipeSource: 'Conferir receitas oficiais',
   controlsTitle: 'Seu primeiro voo', controls: [['Clique direito', 'Abra ou feche o planador'], ['A / D', 'Incline e faça curvas; solte para nivelar suavemente'], ['Mouse', 'Olhe ao redor e ajuste a contribuição de pitch'], ['W / S', 'Acelere perdendo altitude ou reduza a velocidade'], ['Espaço', 'Manobra breve, a partir de 5 m/s'], ['Shift', 'Feche o planador'], ['F5', 'Alterne a perspectiva normalmente']],
-  downloadLabel: 'PRONTO PARA DECOLAR?', downloadTitle: 'Seu próximo destino está lá em cima.', downloadIntro: 'Baixe a Alpha e descubra o que existe entre um salto e o próximo horizonte.', jar: 'Baixar Alpha 0.6.0 · JAR', sourceDownload: 'Arquivo oficial do repositório GitHub',
-  steps: ['Instale Minecraft Java 26.3 e Java 25.', 'Instale Forge 66.1.8 para Minecraft 26.3.', 'Baixe o JAR oficial do WindCraft BR.', 'Coloque o JAR na pasta mods da sua instância e remova versões antigas.', 'Inicie o jogo com o perfil Forge. Em multiplayer, use 0.6.0 no servidor e em todos os clientes.'],
+  downloadLabel: 'PRONTO PARA DECOLAR?', downloadTitle: 'Seu próximo destino está lá em cima.', downloadIntro: 'Baixe a Alpha e descubra o que existe entre um salto e o próximo horizonte.', jar: 'Baixar Alpha 0.6.1 · JAR', sourceDownload: 'Arquivo oficial do repositório GitHub',
+  steps: ['Instale Minecraft Java 26.3 e Java 25.', 'Instale Forge 66.1.8 para Minecraft 26.3.', 'Baixe o JAR oficial do WindCraft BR.', 'Coloque o JAR na pasta mods da sua instância e remova versões antigas.', 'Inicie o jogo com o perfil Forge. Em multiplayer, use 0.6.1 no servidor e em todos os clientes.'],
   forge: 'Obter Forge', limitations: 'Antes do primeiro salto', limitationText: 'Esta versão é Alpha. Áudio, multiplayer, colisões e compatibilidade com mods de câmera e armadura ainda precisam de validação completa. Abrir perto do chão e colidir em alta velocidade pode causar dano. Vento e térmicas não estão disponíveis no Nether ou no End.', validation: 'Ver testes e limitações',
   roadmapLabel: 'UM PROJETO EM MOVIMENTO', roadmapTitle: 'O vento ainda tem muito a contar.', implemented: 'Implementado na Alpha', planned: 'Em avaliação / planejamento', plannedNote: 'Ideias para explorar, sem promessa ou data de lançamento.',
   roadmapDone: ['Vento dinâmico', 'Planador craftável', 'Física aerodinâmica', 'Correntes ascendentes', 'Anemômetro', 'HUD de voo', 'Nuvens e partículas ao vento'],

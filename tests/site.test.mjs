@@ -48,9 +48,9 @@ test('both languages have translated content, metadata, correct HTML language an
   }
   assert.ok(!pages.en.includes('Relatar um problema'));
 });
-test('release 0.6.0 includes six screenshots and same-color wool crafting', () => {
+test('release 0.6.1 includes six screenshots and same-color wool crafting', () => {
   for (const html of Object.values(pages)) {
-    assert.ok(html.includes('0.6.0'));
+    assert.ok(html.includes('0.6.1'));
     assert.ok(!html.includes('0.5.0'));
     for (const file of ['planador-oceano', 'planador-vista-superior', 'planador-vista-inferior', 'planador-curva', 'planador-montanhas', 'planador-planicie']) {
       assert.ok(html.includes(`${file}-0.6.0.png`), file);
@@ -71,7 +71,7 @@ test('every in-page navigation link has a real target', () => {
 });
 test('download points to the verified official alpha; feedback opens three real issue composers', () => {
   for (const [locale, html] of Object.entries(pages)) {
-    assert.match(html, /https:\/\/github.com\/jairomartins\/windcraft-br\/raw\/refs\/heads\/main\/dist\/windcraft-0.6.0.jar/);
+    assert.match(html, /https:\/\/github\.com\/jairomartins\/windcraft-br\/raw\/refs\/heads\/main\/dist\/windcraft-0\.6\.1\.jar/);
     const issues = [...html.matchAll(/href="(https:\/\/github.com\/jairomartins\/windcraft-br\/issues\/new\?[^"]+)"/g)];
     assert.equal(issues.length, 3);
     for (const [index, match] of issues.entries()) {
